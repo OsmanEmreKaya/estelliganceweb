@@ -789,7 +789,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ===== FOOTER (Grid Version) ===== */
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(220px, 1.45fr) 1fr 1fr;
   gap: 2.2rem;
   align-items: start;
   position: relative;
@@ -983,6 +983,10 @@ img { max-width: 100%; height: auto; display: block; }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.6rem;
+  }
+
+  .footer-col--brand {
+    grid-column: 1 / -1;
   }
 
   .nedir-grid {
